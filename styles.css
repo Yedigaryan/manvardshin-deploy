@@ -312,6 +312,8 @@ section > * { max-width: var(--max); margin-left: auto; margin-right: auto; }
 }
 .footer__logo { height: 32px; width: auto; margin-right: auto; }
 .footer a:hover { color: var(--accent-soft); }
+.footer__credit { opacity: .75; }
+.footer__credit a { text-decoration: none; color: var(--stone-50); }
 
 /* ---------- mobile nav ---------- */
 @media (max-width: 860px) {
