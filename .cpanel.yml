@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=../../public_html/
-    - /bin/tar --exclude=./.git --exclude=./.cpanel.yml -cf - . | /bin/tar -xf - -C "$DEPLOYPATH"
+    - tar --exclude=./.git --exclude=./.cpanel.yml -cf - . | tar -xf - -C "$DEPLOYPATH"
