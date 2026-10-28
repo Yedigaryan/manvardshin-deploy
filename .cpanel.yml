@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH="$HOME/public_html/"
-    - /usr/bin/rsync -a --exclude=.git --exclude=.cpanel.yml ./ "$DEPLOYPATH"
+    - export DEPLOYPATH=../../public_html/
+    - /bin/tar --exclude=./.git --exclude=./.cpanel.yml -cf - . | /bin/tar -xf - -C "$DEPLOYPATH"
